@@ -38,9 +38,14 @@ body {
     vertical-align: middle;
 }
 
-image {
-    align-self: center;
-    margin: auto;
+.container {
+    perspective: 25px;
+}
+
+.inner {
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
 }
 
 
