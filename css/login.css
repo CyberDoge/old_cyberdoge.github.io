@@ -11,12 +11,12 @@ html {
 }
 
 body {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-image: linear-gradient(-135deg, #c850c0, #4158d0)
+    background-image: linear-gradient(-135deg, #c850c0, #4158d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .main {
@@ -25,21 +25,20 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    overflow: auto;
-    position: absolute;
+    overflow: hidden;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 960px;
-    height: 75%;
+    height: 74%;
     background: white;
     border-radius: 10px;
-    vertical-align: middle;
 }
 
 .container {
     perspective: 25px;
+    overflow: hidden;
 }
 
 .inner {
@@ -86,6 +85,7 @@ body {
 
 form {
     height: 50%;
+    overflow: visible;
 }
 
 .text_center {
