@@ -15,8 +15,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-attachment: fixed
 }
 
 .main {
@@ -24,16 +28,12 @@ body {
     padding: 177px 130px 33px 95px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     overflow: hidden;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+
     width: 960px;
-    height: 74%;
     background: white;
     border-radius: 10px;
+
 }
 
 .container {
