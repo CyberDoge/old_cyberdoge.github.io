@@ -1,0 +1,191 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+html {
+    height: 100vh;
+    font-family: 'Poppins', 'Purisa',
+        'Droid Sans Mono',
+        'monospace',
+        monospace,
+        'Droid Sans Fallback';
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(-135deg, #c850c0, #4158d0)
+}
+
+.main {
+    box-sizing: border-box;
+    padding: 177px 130px 33px 95px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 960px;
+    height: 75%;
+    background: white;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+image {
+    align-self: center;
+    margin: auto;
+}
+
+
+.title {
+    padding-bottom: 54px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+}
+
+.input_cls:before {
+    padding-top: 1px;
+    padding-left: 35px;
+    font-size: 30px;
+    position: absolute;
+    -webkit-transition: all 0.4s;
+    transition: all 0.5s;
+}
+
+.input_cls:focus-within::before {
+    color: rgba(87, 184, 70, 1);
+    padding-left: 27px;
+}
+
+.email::before {
+    content: "✉";
+}
+
+.password::before {
+    content: "🔒";
+    font-size: 18px;
+    padding-top: 9px;
+}
+
+form {
+    height: 50%;
+}
+
+.text_center {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 12px;
+    color: #999;
+    line-height: 2;
+    height: 24px;
+}
+
+input {
+    background: #e6e6e6;
+    border: 0;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    height: 50px;
+    padding-left: 68px;
+    box-sizing: border-box;
+    width: 290px;
+    font-size: 15px;
+    color: #807a79;
+    font-weight: 500;
+}
+
+input:focus {
+    animation: focus_shadow 0.4s ease-in forwards;
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/* FF 4-18 */
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 19+ */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* IE 10+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+@keyframes focus_shadow {
+    0% {
+        box-shadow: 0 0 0 0;
+        color: rgba(87, 184, 70, 1);
+    }
+
+    99% {
+        box-shadow: 0 0 70px 20px;
+        color: rgba(87, 184, 70, 0);
+
+    }
+
+}
+
+.submit_div {
+    transition: .4s;
+    padding-top: 20px;
+}
+
+.submit_div>input {
+    padding: 0 25px;
+    background: #57b846;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-family: Montserrat;
+    line-height: 1.5;
+
+}
+
+.submit_div>input:hover {
+    transition: .4s;
+    background: #333
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: .4s;
+    color: #57b846;
+}
+
+.last {
+    padding-top: 136px;
+
+}
+
+.arrow_icon::before {
+    display: inline-block;
+    margin-left: 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: '\f178';
+    /* content: "→"; */
+}
