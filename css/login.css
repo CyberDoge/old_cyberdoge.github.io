@@ -59,27 +59,23 @@ body {
 }
 
 .input_cls:before {
-    padding-top: 1px;
-    padding-left: 35px;
-    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 20px;
     position: absolute;
     -webkit-transition: all 0.4s;
     transition: all 0.5s;
+    font-family: 'FontAwesome' !important;
 }
 
 .input_cls:focus-within::before {
     color: rgba(87, 184, 70, 1);
-    padding-left: 27px;
-}
-
-.email::before {
-    content: "✉";
+    padding-left: 22px;
 }
 
 .password::before {
-    content: "🔒";
-    font-size: 18px;
-    padding-top: 9px;
+    content: "\f023";
+    padding-left: 28px;
 }
 
 form {
