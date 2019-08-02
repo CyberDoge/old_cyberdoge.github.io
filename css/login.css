@@ -48,11 +48,24 @@ body {
     -o-transition: transform 0.2s;
 }
 
+@media screen and (max-device-width: 556px) {
+    .container {
+        display: none;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .main {
+        height: 1000px;
+    }
+}
 
 .title {
     padding-bottom: 54px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.375em;
     font-weight: bold;
     line-height: 1.2;
     color: #333;
