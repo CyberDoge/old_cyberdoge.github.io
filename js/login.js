@@ -37,7 +37,6 @@
     //-----------------------------------------
 
     var onMouseEnterHandler = function (event) {
-        inner.style.
         update(event);
     };
 

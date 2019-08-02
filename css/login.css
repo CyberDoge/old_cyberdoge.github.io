@@ -11,12 +11,16 @@ html {
 }
 
 body {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-image: linear-gradient(-135deg, #c850c0, #4158d0)
+    background-image: linear-gradient(-135deg, #c850c0, #4158d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-attachment: fixed
 }
 
 .main {
@@ -24,22 +28,17 @@ body {
     padding: 177px 130px 33px 95px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    overflow: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    overflow: hidden;
+
     width: 960px;
-    height: 75%;
     background: white;
     border-radius: 10px;
-    vertical-align: middle;
+
 }
 
 .container {
     perspective: 25px;
+    overflow: hidden;
 }
 
 .inner {
@@ -86,6 +85,7 @@ body {
 
 form {
     height: 50%;
+    overflow: visible;
 }
 
 .text_center {
