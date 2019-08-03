@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    max-height: 70px;
+    height: 60px;
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    align-items: center;
+    min-width: 100%;
+    background: whitesmoke;
+    box-shadow: 1px 1px 3px gray
+}
+
+header div {
+    flex: 1;
+}
+
+#logo img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.news-link {
+    flex: 0.4;
+    margin-left: 30px;
+}
+
+.search {
+    flex: 3;
+
+}
+
+.search-input {
+    width: 70%
+}
+
+.search * {
+    display: inline;
+}
+
+.ic-notification {
+    float: right;
+    padding-right: 10%;
+}
+
+.login {
+    text-align: center
+}
