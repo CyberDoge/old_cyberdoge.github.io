@@ -36,11 +36,21 @@ header div {
 }
 
 .search-input {
-    width: 70%;
+    width: 300px;
+    display: inline-block;
+    outline: none;
+
 }
 
 input[type=submit] {
     width: 70px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    box-shadow: 2px 1px 0 rgba(207, 207, 207, 0.205);
+    background-color: whitesmoke;
+    height: 30px;
+    outline: none;
+    text-overflow: clip;
 }
 
 .ic-search {
@@ -61,7 +71,7 @@ input[type=submit] {
     width: 0;
 }
 
-.search * {
+.search>* {
     display: inline;
 }
 
