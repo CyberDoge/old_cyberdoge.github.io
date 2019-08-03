@@ -37,13 +37,19 @@ header div {
 
 .search-input {
     width: 70%;
-    transition: width 0.5s ease-in;
 }
 
-.box-transition:not(.box-hidden) {
-    display: inline-block;
+input[type=submit] {
+    width: 70px;
 }
 
+.ic-search {
+    display: none
+}
+
+.search-container>* {
+    transition: width 0.3s ease-in;
+}
 
 .box-transition.box-hidden {
     display: inline-block;
@@ -52,6 +58,7 @@ header div {
 
 .box-hidden:not(.box-transition) {
     display: none !important;
+    width: 0;
 }
 
 .search * {
