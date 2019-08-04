@@ -49,6 +49,7 @@ input[type=submit] {
     box-shadow: 2px 1px 0 rgba(207, 207, 207, 0.205);
     background-color: whitesmoke;
     height: 30px;
+    font-size: 16px;
     outline: none;
     text-overflow: clip;
 }
@@ -75,9 +76,25 @@ input[type=submit] {
     display: inline;
 }
 
-.ic-notification {
-    float: right;
-    padding-right: 10%;
+
+.fa-chevron-down {
+    padding-left: 10px
+}
+
+#notifications-count {
+    background: orange;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    left: -10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .login {

@@ -77,7 +77,7 @@
 }
 
 .email::before {
-    content: "\f0e0";
+    content: "\f2b6";
     padding-left: 28px;
 }
 
@@ -192,5 +192,4 @@ a:hover {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     content: '\f178';
-    /* content: "→"; */
 }

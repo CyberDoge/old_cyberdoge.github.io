@@ -12,16 +12,16 @@
         if (inputs[0].classList.contains('box-hidden')) {
             // show
             search_div.style.textContent = '';
-            search_btn.textContent = "❌"
+            search_btn.classList.add("fa-times");
+            search_btn.classList.remove("fa-search");
             inputs.forEach((i) => i.classList.add('box-transition'));
             inputs.forEach((i) => i.clientWidth);
             inputs.forEach((i) => i.classList.remove('box-hidden'));
-
         } else {
             // hide
             search_div.style.textContent = '';
-
-            search_btn.textContent = "🔎"
+            search_btn.classList.remove("fa-times");
+            search_btn.classList.add("fa-search");
             //icon.style.display = "none";
             search_div.textContent = '';
             inputs.forEach((i) => i.classList.add('box-transition'));
